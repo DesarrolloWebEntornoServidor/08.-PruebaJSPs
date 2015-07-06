@@ -21,20 +21,23 @@
     <body>
         <h1>Conversión grados Celsius y Farenheit</h1>
         <table border="2" class="degradado">
-        <tr><th class="texto">Celsius</th><th class="texto">Farenheit</th></tr>
-<%
-    double celsius = 0.0;
-    double farenheit = 0.0;
-    for ( celsius = 0; celsius <= 100; celsius += 5) {
-        farenheit = (celsius * 1.8) + 32;
-%>      
         <tr>
-            <th class="texto"><%=celsius%></th>
-            <th class="texto"><%=farenheit%></th>
+	        <th class="texto">Celsius</th>
+	        <th class="texto">Farenheit</th>
         </tr>
-<%    
-    }
-%>
+		<%
+		    double celsius = 0.0;
+		    double farenheit = 0.0;
+		    for ( celsius = 0; celsius <= 100; celsius += 5) {
+		        farenheit = (celsius * 1.8) + 32;
+		%>      
+		        <tr>
+		            <th class="texto"><%=celsius%></th>
+		            <th class="texto"><%=farenheit%></th>
+		        </tr>
+		<%    
+		    }
+		%>
         
         </table>
     </body>
